@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-11-11T02:29:34.420909+00:00",
+  "branch": "study/hair-redesign-01",
+  "base_commit": "48a7c69a2789db20527c8b730be72936e8b57b14",
+  "scope": "Isolation and baseline capture only; no geometry changes, rendering, or Godot export authorized in this step.",
+  "approved_face_signature": "99b059d3b097425a23eceda87745bc58992f2b6bc9893ca3aa7b583e6ffe8a53",
+  "protected_file_sha256": {
+    ".tools/studies/likeness/lyra-face-study.blend": "ec6e4a276b2cae86195dc03a710df9cb4ee81f053e21645d08eefa9fa8265d84",
+    ".tools/studies/likeness/approved-face.json": "9c32853627f692f4c3d00b0931c9d466d0cb9db22636156fd2d7b9edc53c1c6b",
+    ".tools/authoring/lyra-base.blend": "b021328bb8e37ac68c27cc99b2071e049e67317f08e22c5cf3217a88740ee542",
+    "avatar/assets/lyra/lyra-base.glb": "93567c46be1be1c266c66073f20c926cc1440c257199c68799fb1fb1a96b972d"
+  },
+  "study_file": "lyra-hair-redesign-01.blend",
+  "study_initial_sha256": "ec6e4a276b2cae86195dc03a710df9cb4ee81f053e21645d08eefa9fa8265d84",
+  "existing_working_changes": [
+    " M docs/face-study.md",
+    " M scripts/build_likeness_study.py",
+    " M scripts/likeness_review.html",
+    "?? scripts/study_hair.py",
+    "?? scripts/verify_study_hair.py"
+  ]
+}
