@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "body_node": "LyraBody_export",
+  "bones": {
+    "head": "head",
+    "chest": "spine_03",
+    "foot_left": "foot_l",
+    "foot_right": "foot_r",
+    "eye_left": "eye_l",
+    "eye_right": "eye_r"
+  },
+  "morphs": {
+    "blink_left": "eyeBlinkLeft",
+    "blink_right": "eyeBlinkRight",
+    "jaw": "jawOpen"
+  }
+}

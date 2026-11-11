@@ -1,0 +1,10 @@
+# Godot-generated import and editor cache.
+avatar/.godot/
+.tools/
+# Local generated preview; reproduce with the approved Blender/MPFB toolchain.
+avatar/assets/lyra/*.glb
+avatar/assets/lyra/*.glb.import
+# Texture copies extracted from the generated GLB by Godot.
+avatar/assets/lyra/lyra-base_*.png
+avatar/assets/lyra/lyra-base_*.png.import
+**/__pycache__/

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LYRA — face likeness study</title>
+<style>
+body{margin:0;background:#171c22;color:#e7e9ed;font:16px/1.5 system-ui,sans-serif}
+main{max-width:1250px;margin:auto;padding:28px}h1{font-size:25px;margin:0 0 8px}
+p{max-width:85ch;color:#c7cdd5}section{display:grid;grid-template-columns:1fr 2fr;gap:22px}
+figure{margin:0}figcaption{margin:10px 0}.reference,.wipe{position:relative;aspect-ratio:4/5;overflow:hidden;background:#080b10}
+.reference img{position:absolute;width:256%;max-width:none;left:-82.5%;top:8%}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}img{width:100%;display:block}
+.wipe img{position:absolute;inset:0}.wipe .after{clip-path:inset(0 50% 0 0)}
+input{width:100%;accent-color:#77c5fc}label{display:block;margin-top:12px}
+small{color:#aeb9c6}a{color:#9ed5ff}details{margin-top:20px}details img{max-width:420px}
+@media(max-width:780px){section{grid-template-columns:1fr}.reference{max-width:400px}}
+</style>
+<main>
+<h1>LYRA · face likeness study 01</h1>
+<p>A first editable face blockout for review. This is not an approved replica.
+The camera is estimated from the supplied portrait; the prototype's hair and clothing
+are context placeholders. Review the facial contours before polishing those assets.</p>
+<section>
+<figure><div class="reference"><img src="reference.png" alt="Original LYRA portrait, displayed through a face crop"></div>
+<figcaption>Supplied reference · <a href="reference.png">full original</a><br>
+<small>Display crop only. Unseen angles remain unknown.</small></figcaption></figure>
+<div><div class="pair">
+<figure><a href="baseline-angle.png"><img src="baseline-angle.png" alt="Starting model under the fixed study lighting"></a><figcaption>Starting face</figcaption></figure>
+<figure><a href="study-angle.png"><img src="study-angle.png" alt="Editable face study under the same lighting"></a><figcaption>Study controls enabled</figcaption></figure>
+</div><details><summary>Compare the geometry changes with a wipe</summary>
+<div class="wipe"><img src="baseline-angle.png" alt="Starting face"><img class="after" id="after" src="study-angle.png" alt="Study face overlay"></div>
+<label for="wipe">Study coverage <input id="wipe" type="range" min="0" max="100" value="50"></label>
+<small>Left: study. Right: starting model. Identical camera, materials and light.</small>
+</details></div>
+</section>
+<details><summary>Front contours without hair or skin color</summary><a href="study-front-clay.png"><img src="study-front-clay.png" alt="Frontal clay contour render"></a></details>
+<p>Open <strong>lyra-face-study.blend</strong> in Blender. Select LyraBody_export and use
+the <strong>Study_</strong> shape keys to review or disable each local adjustment.
+Controls cover cheek hollow/crest, nose tip/base, lip volume, mouth corners and jaw.
+Their default values are 1; set them to 0 for the starting face.</p>
+<p><small>No changes are exported into the Godot avatar. The source portrait is a visual reference,
+not projected onto the model. Lighting and camera matching still need visual review.</small></p>
+</main>
+<script>document.querySelector('#wipe').addEventListener('input',e=>document.querySelector('#after').style.clipPath=`inset(0 ${100-e.target.value}% 0 0)`);</script>
+</html>
