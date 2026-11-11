@@ -1,0 +1,42 @@
+{
+  "purpose": "GitHub review snapshot; generated Blender scene and tools remain local.",
+  "reference": {
+    "file": "reference.png",
+    "source": "https://github.com/JohnGwinnDEV/rixinteractive-site/blob/main/LYRAIMage.png",
+    "license": "No license supplied; no new license granted by this snapshot.",
+    "distribution_authorization": "User explicitly requested pushing review.html with images on 2026-11-10."
+  },
+  "renders": {
+    "files": [
+      "baseline-angle.png",
+      "study-angle.png",
+      "study-front-clay.png"
+    ],
+    "source": "Local Blender likeness study; scripts/build_likeness_study.py and scripts/study_hair.py",
+    "base_asset_provenance": "../../../assets/lyra-base-provenance.json",
+    "base_asset_license": "../../../assets/licenses/mpfb-assets-CC0.md",
+    "note": "Renders reuse the recorded CC0 MakeHuman/MPFB base assets. Visual likeness remains subject to review."
+  },
+  "files": [
+    {
+      "file": "baseline-angle.png",
+      "bytes": 978933,
+      "sha256": "344d15b6fcad4044d6d46fef3ee60f0c26fc2d4f60af0ffddaefa9fb7f0fb39d"
+    },
+    {
+      "file": "reference.png",
+      "bytes": 2500985,
+      "sha256": "9dd93e24ace6f61419534d4b795b0a4ff0bdc330bc61add487bbb38feee2b4fb"
+    },
+    {
+      "file": "study-angle.png",
+      "bytes": 978874,
+      "sha256": "c86ec703f7f8543b38d5324671db0657053d4d2389b98dcaa17c297eceec81c5"
+    },
+    {
+      "file": "study-front-clay.png",
+      "bytes": 768178,
+      "sha256": "3029b40c06cbf2c9a5172af0219328c507e535628a975fcd81321932268b480b"
+    }
+  ]
+}
